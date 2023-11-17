@@ -1,4 +1,5 @@
 # three-learning
-learning three.js
+learning three.js, using node.js as a package manager
 
-using node.js
+# preview
+![pyramid](./preview/windmill.gif)
