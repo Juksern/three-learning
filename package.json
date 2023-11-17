@@ -1,6 +1,15 @@
 {
   "dependencies": {
     "dat.gui": "^0.7.9",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
     "three": "^0.158.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.5"
+  },
+  "scripts": {
+    "build": "esbuild src/windmill/windmill.mjs src/pyramid/pyramid.mjs --bundle --platform=node --outdir=dist --sourcemap",
+    "start": "node src/server.js"
   }
 }
